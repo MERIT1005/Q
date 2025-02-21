@@ -22,7 +22,7 @@ user_bans = {}  # Tracks user ban status and ban expiry time
 reset_time = datetime.now().astimezone(timezone(timedelta(hours=5, minutes=10))).replace(hour=0, minute=0, second=0, microsecond=0)
 
 # Cooldown duration (in seconds)
-COOLDOWN_DURATION = 10  # 5 minutes
+COOLDOWN_DURATION = 2  # 5 minutes
 BAN_DURATION = timedelta(minutes=1)  
 DAILY_ATTACK_LIMIT = 15  # Daily attack limit per user
 
@@ -84,7 +84,7 @@ def show_help(message):
         "📜 `/help` - 🏆 *View this epic menu!*\n"
         "⚡ `/status` - 🚀 *Check your battle status!*\n"
         "✅ `/verify` - 🔓 *Unlock exclusive features!*\n"
-        "💀 `/bgmi` - 🎯 *Launch your attack!* *(Verified users only)*\n"
+        "💀 `/OPXTF` - 🎯 *Launch your attack!* *(Verified users only)*\n"
         "📸 *Send a Photo* - 🔥 *Submit feedback!* \n\n"
         "━━━━━━━━━━━━━━━━━━━━━\n"
         "💠 *『 𝗔𝗗𝗠𝗜𝗡 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 』* 💠\n"
@@ -120,7 +120,7 @@ def check_status(message):
 # 🔄 『 𝑹𝒆𝒔𝒆𝒕 𝑨𝒕𝒕𝒂𝒄𝒌 𝑳𝒊𝒎𝒊𝒕𝒔 』🔄
 @bot.message_handler(commands=['reset_TF'])
 def reset_attack_limit(message):
-    owner_id = 7479349647  # Replace with the actual owner ID
+    owner_id = 5712886230  # Replace with the actual owner ID
     if message.from_user.id != owner_id:
         response = (
             "❌🚫 *ACCESS DENIED!* 🚫❌\n\n"
